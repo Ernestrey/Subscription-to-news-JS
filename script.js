@@ -1,9 +1,10 @@
-let message = document.querySelector('.subscription-message')
-let form = document.querySelector('.subscription')
+let text = document.querySelector('.subscription-text')
+const form = document.querySelector('.subscription')
+const email = document.querySelector('.subscription-email')
+
 
 form.onsubmit = function(evt) {
   evt.preventDefault()
 
-  message.textContent = 'Форма отправлена!'
-  console.log('hfd')
+  text.textContent = 'Адрес ' + email.value + ' добавлен в список получателей рассылки.'
 }
